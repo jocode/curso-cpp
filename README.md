@@ -7,10 +7,11 @@ El **compilador** traduce el código fuente a código máquina (Código Binario)
 Hay algunos programas que son compiladores y editores, se conocen como IDE (Entorno de desarrollo Integrado). por ejemplo.
 - Dev C++
 - CodeBlocks
+- [Zinja](http://zinjai.sourceforge.net/). Es un programa similar a PSeint en la interfaz.
 
-En este caso trabajaremos con **Dev C++**, así que debemos descargarlo e instalarlo.
+Cualquiera que se escoja se debe descargar e instalar.
 
-Para crear un nuevo proyecto debemos ir a *Menu -> Nuevo -> Proyecto* y allí escogemos el tipo de aplicación que queramos escoger.
+En el caso de usar **Dev C++**, al crear un nuevo proyecto debemos ir a *Menu -> Nuevo -> Proyecto* y allí escogemos el tipo de aplicación que queramos escoger.
 
 Para ejecutar el programa, debemos previamente haberlo compilado. También podemos usar el botón de **compilar y ejecutar**
 
@@ -23,5 +24,144 @@ Luego de eso, debemos incluir las librerías, que son un conjunto de código que
 Para incluir una librería usamos la sentencia
 ```c++
 #include <stdio.h>
+
+int main(){
+    printf("Hola Mundo \n");
+    std::cout << "Hi everyone" << std::endl;
+    return 0;
+}
 ```
 *stdio.h* **`.h`** porque es una cabecera.
+*`\n`* Es un operador de escape, el compilador lo detecta como un salto de línea.
+
+- **Librería** Conjunto de herramientas que viene con código predefinido, lo que nos permite facilitar el trabajo.
+
+
+## Variables enteras (`int`)
+
+**iostream** Es una librería que nos permite escribir y leer información por consola.
+```cpp
+#include <iostream>
+```
+
+Para declarar un variable en *C++¨*, debemos primero colocar el tipo de dato. Por ejemplo:
+```cpp
+int num = 31;
+// Otra forma de delcarar y asignar valor es
+int num{23};
+```
+
+Para evitar colocar prefijos a las funciones, es necesario especificar los espacios de nombre que vamos a utilizar, por ejemplo:
+```cpp
+using namespace std;
+
+// Si no usaramos los espacios de nombre, nos tocaría usar 
+std::cout << "Hola mundo \n Hola universo " << endl;
+```
+
+Si queremos que haya salto de línea, podemos usar el operador de escape `\n`, y así colocamos texto en una nueva línea.
+
+## Variables `bool` y `char`
+
+- **char** Esta tipo de dato almacena caracteres
+- **bool** Este tipo de dato almacena valores booleanos (false o verdadero), `true` `false`
+
+### Variable de tipo `char`
+
+Si por ejemplo colocamos una palabra en una variable de tipo **char**, el compilador, sólo tomará el último caracter. En este caso usamos *comillas simples*
+```cpp
+char letra = 'Hola mundo';
+```
+
+Para mostrar varios caracteres usamos comillas dobles y colocamos un __`*`__, al final de la palabra reservada `char` .
+
+### Variable de tipo `bool`
+Es un tipo de variable lógico, 0 - 1, ó verdadero y falso.
+0 == false
+1 == true
+
+Para declarar una variable booleana, indicamos el tipo de dato `bool`
+```cpp
+bool variable = true; // false | true
+```
+
+
+## Variable de tipo `float`
+
+Son variables que guardar números de coma flotante de baja precisión, son como decimales que no tienen muchos decimales (No tiene tanto espacio en la memoria).
+
+En algunos casos, el compilador redondea el número a un valor superior o inferior.
+
+```cpp
+float num = 5.23478;
+```
+
+## Variable de tipo `double`
+
+Son tambien números de punto flotante que tienen más precisión ó espacio que memoria que los float. Funciona para números con más caracteres.
+```cpp
+double num = 12.3479835;
+```
+
+## Constantes
+
+Son variables que no pueden ser modificadas durante la ejecución del programa. Lo valores que le asignemos no se pueden cambiar.
+
+```cpp
+// Es una constante, su valor no se puede cambiar
+const int numero = 11;
+```
+
+
+## Operadores Aritméticos
+
+Son los que nos permiten realizar operaciones matemáticas.
+
+```cpp
+int num1 = 2;
+int num2 = 6;
+int suma = num1 + num2;
+```
+
+- Suma `+`
+- Resta `-`
+- Multiplicación `*`
+- División `/`
+- Módulo (Residuo de la división) `%`
+
+
+## Operadores de Asignación
+
+El operador de asignación general es `=`. Exiten otros como:
+- **Asigna una suma** `+=` Suma un valor a la variable 
+- **Asigna una resta** `-=` Resta un valor a la variable
+- **Asigna una multiplicación** `*=` Resta un valor a la variable
+
+```cpp
+// Declaración;
+int operacion;
+// Asignación
+operacion = 12;
+// Operador de asignación
+operacion *= 3;
+``` 
+
+## Operadores de Comparación
+
+- *Operador de comparación* `==`
+- *Distinto o diferente* `!=`
+- *Mayor que* `>`
+- *Mayor o igual que* `>=`
+- *Menor que* `<`
+- *Menor o igual que* `<=`
+
+Estos operadores son usamos en los condicionales y ciclos, donde comparamos dos valores para realizar una determinada acción.
+
+## Operadores lógicos
+
+- *and* `&&`
+	Si ambas condiciones se cumplen, retorna true
+- *or* `||`
+	Si alguna de las dos condiciones se cumple, retorna true.
+- *Negación* `!`
+	Niega una condición. Si es true, lo vuelve false y viciversa.
