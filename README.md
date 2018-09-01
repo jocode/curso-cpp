@@ -146,6 +146,9 @@ operacion = 12;
 operacion *= 3;
 ``` 
 
+Algunos ejemplos de operadpres de asignación son:
+![Operadores de Asignación](images/operadores-asignacion.png)
+
 ## Operadores de Comparación
 
 - *Operador de comparación* `==`
@@ -165,3 +168,55 @@ Estos operadores son usamos en los condicionales y ciclos, donde comparamos dos 
 	Si alguna de las dos condiciones se cumple, retorna true.
 - *Negación* `!`
 	Niega una condición. Si es true, lo vuelve false y viciversa.
+
+## Funciones matemáticas
+
+La librería header Standard `cmath`define un rango de funciones trigonométricas y numéricas que puede usar en todos sus programas. A continuación se presenta una tabla con las funciones más útiles.
+
+![Funciones matemáticas 1](images/math-functions1.png)
+![Funciones matemáticas](images/math-functions2.png)
+*Img. Referencia Beginning C++ Ivor Horton (Pag. 40)*
+## Sentencias `if` (Condicionales)
+
+Permiten comparar dos variables para ejecutar una acción determinada. La condición se cumple siempre y cuando la condición sea verdadera. 
+
+```cpp
+if (numero1 < numero2){
+    cout << "Es menor" << endl;
+} else if (numero1==numero2){
+    cout<<"Son iguales"<< endl;
+} else {
+    cout << "Es mayor" << endl;
+}
+```
+
+## Sentencia `switch`
+
+Es un tipo de condicional que dado un valor introducido los compara con los casos que tiene definido. Un ejemplo de switch en `C++` es el siguiente
+
+```cpp
+switch (c){
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':	
+        cout << "El una vocal." << endl;
+        break;
+default:
+    cout << "Es una consonante" << endl;
+    break;
+}
+```
+
+## Comentarios
+
+Son útiles para ordenar el código y explicar el código. Cuando se compila el programa, el compilador ignora estas líneas y nos las lee.
+
+```cpp 
+/**
+* Comentario multilínea
+*/
+
+// Comentario de una sola línea
+```
