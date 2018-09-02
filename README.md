@@ -18,11 +18,11 @@ Para ejecutar el programa, debemos previamente haberlo compilado. También podem
 
 ## Hola Mundo
 
-Primero, debemos crear un nuevo proyecto, y luego crear un archivo llamado **main.cpp**
+Primero, debemos crear un nuevo proyecto, y luego crear un archivo llamado **main.cpp**, o el nombre que se desee.
 Luego de eso, debemos incluir las librerías, que son un conjunto de código que viene predefinido y que nos facilita el trabajo.
 
 Para incluir una librería usamos la sentencia
-```c++
+```cpp
 #include <stdio.h>
 
 int main(){
@@ -284,3 +284,93 @@ Para asignar valores al arreglo, debemos acceder a la posición y en ella coloca
 // Asignamos un valor al arreglo, en la posición 0
 variable[0] = 12;
 ``` 
+
+## Operadores del Preprocesaor
+
+### Operador `include`
+
+Es un operador del preprocesador, el preprocesador es una parte del compilador que verifica qué librerías se están importando en el código fuente. (`#`).
+
+El operador `#include`, permite incluir librerías. Hay dos formas de incluir las librerías
+
+- `#include <iostream>` Busca los archivos en los recursos del compilador
+- `#include "iostream"` Busca los archivos en la propia carpeta
+
+
+### Operador `define`
+
+`#define` crea una macro, que es la asociación de un identificador o identificador parametrizado con una cadena de token. Una vez definida la macro,el compilador puede sustituir la cadena de token para cada aparición del identificador del archivo de código fuente.
+
+```cpp
+#define suma(a,b) a+b
+...
+int valor = suma(2,5);
+```
+En este ejemplo, el compilador evalúa el identificador y al utilizarse, sustituye la cadena con la aparición del identificador.
+
+
+## Funciones
+
+Las funciones son una manera de encapsular una funcionalidad que quieres reutilizar, de manera que puedes llamar esa función con un solo nombre, y no tendrás que escribir el código entero cada vez que la utilices.
+
+La declaración de una función en c++, va de la siguiente manera.
+*tipo-dato-devolver nombre-funcion(){ //Código a ejecutar  }*
+
+```cpp
+// Funcion suma
+int sumar(int a, int b){
+	return a+b;
+}
+
+// Funcion que no retorna nada
+void miFuncion(){
+	cout << "Yo no retorno nada" << endl;
+}
+```
+
+Hay dos tipos de funciones
+- Las que no retornan valor `void`
+- Las que retornan un valor `int`, etc.
+
+También podemos definir parámetros por defecto a la función, de la siguiente manera.
+```cpp
+void funcion(int a = 10){
+    cout << a+3 << endl;
+}
+```
+
+De esta manera, ya el valor de a tiene predefinido 10, sin embargo este valor puede ser cambiado al pasar por parámetro un nuevo valor en la llamada de la función.
+```cpp
+int main(){
+    function();
+    function(12);
+    return 0;
+}
+```
+
+## Estructuras
+
+Son un tipo de variable estructurada, donde se puede almacenar varios datos sin importar del tipo que sea y que tenga relación entre ellas.
+
+Haciendo relación con otros lenguajes, vendría siendo lo que se conoce como objetos.
+
+```cpp
+// Definición de la estructura
+struct Personaje {
+    int edad;
+    int telefono;
+    string nombre;
+};
+
+// Declaración y asignación de valores
+Personaje juan;
+juan.nombre = "Juan Marruecos";
+juan.edad = 100;
+juan.telefono = 3123;
+
+cout << juan.nombre << endl;
+```
+
+En las estructuras también podemos declarar funciones y constructores. Los **constructores** son funciones que se inicializan al ser inicializadas las variables.
+
+*Ver ejemplo* [estructuras-2.cpp](estructuras-2.cpp)
