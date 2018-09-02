@@ -220,3 +220,67 @@ Son útiles para ordenar el código y explicar el código. Cuando se compila el 
 
 // Comentario de una sola línea
 ```
+
+## Ciclos o Bucles
+
+Estas estructuras nos permiten ejecutar bloques de códigos dada una condición.
+
+## Ciclo `while`
+
+Ejecuta las sentencia siempre que la condición sea verdadera. La expresión se verfica en cada inicio de la iteración.
+
+```cpp 
+int i = 0;
+while (i <= 5) {
+    cout << "Valor de i: " << i << endl;
+    // Aumentamos el valor de la variable
+    i++;
+}
+```
+
+## Ciclo `do while`
+
+El bucle do-while es una variante del ciclo while. Este ciclo evalúa la expresión al final de cada iteración. Por lo que se garantiza que el ciclo se ejecute al menos una vez.
+
+```cpp 
+int a = 10;
+do {
+    cout << "Valor de a: " << a << endl;
+    // Aumentamos el valor de la variable
+    a++;
+} while (a <= 5);
+```
+
+## Ciclo `for`
+
+El ciclo for ejecuta la primera expresión al iniciar el ciclo. Luego al inicio de cada iteración (Repetición) evalúa la segunda expresion y al final de cada iteración ejecuta la tercera expresion.
+
+```cpp 
+// Declaración de un array
+char array[5];
+array[0] = 'A';
+array[1] = 'B';
+array[2] = 'C';
+array[3] = 'D';
+array[4] = 'E';
+
+// Ciclo for
+for (unsigned int i = 0; i < sizeof(array) ; i++){
+    cout << array[i] << endl;
+}
+```
+
+En este ejemplo, vemos algo llamado arreglo. Los arreglos son variables que tienen varias posiciones en memoria, lo que permiten almacenar más de un valor en una sóla referencia.
+
+Para declarar un arreglo, lo hacemos igual que en una variable, colocando al final corchetes angulares indicando el tamaño del arreglo. 
+
+```cpp
+// Arreglo de tipo entero con 5 posiciones
+int variable[5];
+```
+
+Para asignar valores al arreglo, debemos acceder a la posición y en ella colocar el valor que deseemos (Debe ser del mismo tipo de dato).
+```cpp
+// Asignamos un valor al arreglo, en la posición 0
+variable[0] = 12;
+``` 
