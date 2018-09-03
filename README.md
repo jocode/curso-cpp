@@ -374,3 +374,81 @@ cout << juan.nombre << endl;
 En las estructuras también podemos declarar funciones y constructores. Los **constructores** son funciones que se inicializan al ser inicializadas las variables.
 
 *Ver ejemplo* [estructuras-2.cpp](estructuras-2.cpp)
+
+## Espacios de Nombres (`namespace`)
+
+Es una funcionalidad de C++ que permite crear encapsular a las variables para evitar conflictos cuando tienen el mismo nombre.
+
+```cpp
+// Declaración de un espacio de nombre
+namespace pueblo {
+    int calle = 10;
+}
+
+// Utilización del espacio de nombre
+using namespace ciudad;
+```
+
+## Punteros
+
+Son herramientas que nos permiten gestionar la memoria. Los punteros son variables que guardan la dirección en memoria.
+
+**`&`** *Operador de referencia*, nos permite saber la dirección en memoria de las variables.
+
+`*` Es un operador de indirección, es decir cambia el valor de memoria por el valor que contiene esa dirección.
+
+```cpp
+cout << &numero << endl;
+```
+
+Cuando accedemos al puntero en un array, se accede a la posición 0. Los demás items están en las posiciones siguientes de la memoria. Para acceder a las direcciónes siguientes de memoria, sólo dando `p++`
+
+```cpp
+int array[5];
+int *p;
+
+int main(){
+
+    p = array;
+    cout << "Direccion array[0] " << &array << endl;
+    cout << "Puntero " << p << endl;
+
+    cin.get();
+    return 0;
+}
+```
+
+## Punteros a estructuras
+
+Se pueden tener tambien referencias a las estructuras `struct`, el funcionamiento de los punteros es igual como en los ejemplos anteriores.
+
+## Definición de tipos `tipedef`
+
+Permite colocarle alias o sobrenombre a los tipos de datos que estemos utilizando.
+
+```cpp
+// Define una tipo de dato entero sin signo como `uint`
+typedef unsigned int  uint;
+```
+
+## Clases
+
+Una clase es un modelo que define las propiedades y métodos de un objeto.
+- **Atributos o propiedades**: Variables
+- **Métodos**: Son las funciones que haré con esos atributos
+
+*Las clases son plantillas que agrupan comportamiento (métodos) y estados (atributos) de los futuros objetos.*
+
+Las clases se definen usando la palabra reservada `class`, seguido del nombre de la clase.
+```cpp
+class nombreClase { //Código a definir };
+``` 
+
+Cada clase tiene modificadores de acceso, como son:
+
+**public**: Pueden ser accedidos desde cualquier instancia de la clase
+**private**: Pueden ser accedidos sólo en la misma clase
+**protected**: Pueden ser accedidos desde las clases heredadas.
+
+
+*Ejemplo de clases* [clases.cpp](clases.cpp)
