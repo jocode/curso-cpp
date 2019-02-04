@@ -16,6 +16,9 @@ En el caso de usar **Dev C++**, al crear un nuevo proyecto debemos ir a *Menu ->
 Para ejecutar el programa, debemos previamente haberlo compilado. También podemos usar el botón de **compilar y ejecutar**
 
 
+> Para ignorar archivos por git, podemos usar la herramienta [gitignore](https://www.gitignore.io/), que genera el archivo para usarlo, dependiendo del lenguaje o entorno en el que se trabaje.
+
+
 ## Hola Mundo
 
 Primero, debemos crear un nuevo proyecto, y luego crear un archivo llamado **main.cpp**, o el nombre que se desee.
