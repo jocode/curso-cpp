@@ -83,13 +83,13 @@ bool study = true;
 bool love = false;
 ```
 
-> Si un valor booleano es asignado a un entero, **true (verdadero)** es 1, y**false (false)** es 0
+> Si un valor booleano es asignado a un entero, **true (verdadero)** es 1, y** false (false)** es 0
 
 
 ## Nombrar variables
 
 Para nombrar variables en C++, sigue las siguientes instrucciones:
-- Deben empezar con una letra del alfabeto o guión bajo (\_)
+- Deben empezar con una letra del alfabeto o guión bajo ( \_ )
 - Después de la letra inicial, los nombres de variables pueden contener letras adicionales.
 
 **Importante**
