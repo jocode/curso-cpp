@@ -10,7 +10,7 @@ int hombres, mujeres;
 float per_hombres, per_mujeres, total;
 
 int main(int argc, char *argv[]) {
-	system("color a1");
+	system("color 06");
 	
 	cout << "Ingrese la cantidad de hombres: ";
 	cin >> hombres;

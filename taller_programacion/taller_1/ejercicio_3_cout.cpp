@@ -12,6 +12,7 @@ float descuento, precio, total;
 const float PER_DESCUENTO = 15;
 
 int main(int argc, char *argv[]) {
+	system("color 02");
 	
 	cout << "Ingrese el precio de la compra: ";
 	cin >> precio;

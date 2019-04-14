@@ -10,8 +10,7 @@ using namespace std;
 int anioNacimiento = 0;
 
 int main(int argc, char *argv[]) {
-	
-	system("color a1");
+	system("color 03");
 	
 	/* Tomo la hora del Computador, mediante la clase time */
 	time_t theTime = time(NULL);

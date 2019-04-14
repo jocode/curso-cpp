@@ -9,8 +9,7 @@ using namespace std;
 float pesos_per_dolares, pesos, conversion;
 
 int main(int argc, char *argv[]) {
-	
-	system("color a1");
+	system("color 02");
 	
 	printf("\nIngrese la cantidad de pesos colombianos a convertir: $ ");
 	scanf("%f", &pesos);

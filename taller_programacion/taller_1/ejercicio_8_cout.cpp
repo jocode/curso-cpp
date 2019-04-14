@@ -11,7 +11,7 @@ using namespace std;
 float number;
 
 int main(int argc, char *argv[]) {
-	system("color a1");
+	system("color F0");
 	
 	cout << "Ingrese un número: ";
 	cin >> number;

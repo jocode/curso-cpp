@@ -11,6 +11,7 @@ float capital = 0, ganancias = 0;
 const float razon_interes =  2;
 
 int main(int argc, char *argv[]) {
+	system("color 06");
 	
 	cout << "Ingrese la cantidad de Capital a invertir en el banco: ";
 	cin >> capital;

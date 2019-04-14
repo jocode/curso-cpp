@@ -14,7 +14,7 @@ float nota, promedio_notas = 0;
 float examen, trabajo, nota_final;
 
 int main(int argc, char *argv[]) {
-	system("color a1");
+	system("color F0");
 	
 	for (int i = 1; i <= 3; i++){
 		cout << "Ingrese la nota " << i << " : ";

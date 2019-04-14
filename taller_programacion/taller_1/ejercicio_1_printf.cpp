@@ -9,6 +9,7 @@ float capital = 0, ganancias = 0;
 const float razon_interes =  2;
 
 int main(){
+	system("color 06");
 	
 	printf("Ingrese la cantidad de Capital a invertir en el banco: ");
 	scanf("%f", &capital);

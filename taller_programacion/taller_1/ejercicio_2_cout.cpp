@@ -13,7 +13,7 @@ float sueldo_base, venta, comision, ventas = 0.0;
 const float PER_COMISION = 10; 
 
 int main(int argc, char *argv[]) {
-	system("color a1");
+	system("color 03");
 	
 	for (int i = 1; i<= 3; i++){
 		cout << "Ingrese el precio de las venta " << i << ": ";

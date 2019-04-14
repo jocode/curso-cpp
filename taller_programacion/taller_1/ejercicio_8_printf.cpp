@@ -11,7 +11,7 @@ using namespace std;
 float number;
 
 int main(int argc, char *argv[]) {
-	system("color a1");
+	system("color F0");
 	
 	printf("Ingrese un número: ");
 	scanf("%f", &number);
