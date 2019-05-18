@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <stdio.h>
 using namespace std;
 
 /**
@@ -28,47 +29,47 @@ int main(int argc, char *argv[]) {
 	float promedio, total;
 	const float preparatoria = (180/5), profesional = (300/5);
 	
-	cout << "A qué tipo pertenece el alumno: \n1 = Preparatoria\n2 = Profesional\n: ";
-	cin >> tipo;
-	cout << "Ingrese el promedio del Alumno: ";
-	cin >> promedio;
+	printf("A qué tipo pertenece el alumno: \n1 = Preparatoria\n2 = Profesional\n: ");
+	scanf("%d",&tipo);
+	printf("Ingrese el promedio del Alumno: ");
+	scanf("%f",&promedio);
 	
 	if (tipo == 1){
 		if (promedio >= 9.5){
 			total = 55 * preparatoria * 0.75;
-			cout << "Puedes cursar  55 unidades y tiene un descuento del 25%";
+			printf("Puedes cursar  55 unidades y tiene un descuento del 25%%");
 		} else if (promedio >= 9 && promedio < 9.5){
 			total = 50 * preparatoria * 0.9;
-			cout << "Puedes cursar  50 unidades y tiene un descuento del 10%";
+			printf("Puedes cursar  50 unidades y tiene un descuento del 10%%");
 		} else if (promedio > 7 && promedio < 9){
 			total = 50 * preparatoria;
-			cout << "Puedes cursar  50 unidades y NO tiene descuento";
+			printf("Puedes cursar  50 unidades y NO tiene descuento");
 		} else if (promedio <= 7){
-			cout << "¿Cuantas Materias Reprobó?: ";
-			cin >> reprobadas;
+			printf("¿Cuantas Materias Reprobó?: ");
+			scanf("%d",&reprobadas);
 			
 			if (reprobadas <= 3){
 				total = 45 * preparatoria;
-				cout << "Puedes cursar  45 unidades y NO tiene descuento";
+				printf("Puedes cursar  45 unidades y NO tiene descuento");
 			} else {
 				total = 40 * preparatoria;
-				cout << "Puedes cursar  40 unidades y NO tiene descuento";
+				printf("Puedes cursar  40 unidades y NO tiene descuento");
 			}
 		}
 	} else if (tipo == 2){
 		if (promedio >= 9.5){
 			total = 55 * profesional * 0.80;
-			cout << "Puedes cursar  55 unidades y tiene un descuento del 20%";
+			printf("Puedes cursar  55 unidades y tiene un descuento del 20%%");
 		} else {
 			total = 55 * profesional;
-			cout << "Puedes cursar  55 unidades y NO tiene descuento.";
+			printf("Puedes cursar  55 unidades y NO tiene descuento.");
 		}
 	} else {
-		cout << "Has digitado mal el tipo al que pertenece.";
+		printf("Has digitado mal el tipo al que pertenece.");
 	}
 	
-	cout << "\nEl alumno tiene que pagar la colegiatura con un valor de $" << total;
-
+	printf("\nEl alumno tiene que pagar la colegiatura con un valor de $%.2f", total);
+	
 	return 0;
 }
 
