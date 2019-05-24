@@ -1,0 +1,23 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <stdlib.h>
+using namespace std;
+
+/**
+2. Leer 10 numero y obtener su cubo y su cuarta
+*/
+int main(int argc, char *argv[]) {
+	
+	float numero;
+	
+	for (int i = 1; i <= 10; i++){
+		printf("Ingrese el %d numero: ", i);
+		scanf("%f", &numero);
+		
+		printf("La tercera es: %.2f \nLa cuarta es: %.2f \n\n", pow(numero, 3), pow(numero, 4) );
+	}
+	
+	return 0;
+}
+
