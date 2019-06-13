@@ -12,7 +12,7 @@
 3. Determinar cuántos hombres y cuántas mujeres se encuentran en un grupo de n personas, suponiendo que los datos son extraidos alumno por alumno.
 
 
-4. El departamento de Seguridad Pública y Tránsito del D.F. desea saber, de los n autos que entran a la ciudad de México, cuántos entran con calcomanía de cada color. Conociendo el último dígito de la placa de cada automóvil de puede determinar el color de la calcomanía utilizando la siguiente relación:
+4. El departamento de Seguridad Pública y Tránsito del D.F. desea saber, de los n autos que entran a la ciudad de México, cuántos entran con calcomanía de cada color. Conociendo el último dígito de la placa de cada automóvil se puede determinar el color de la calcomanía utilizando la siguiente relación:
 
 Dígito|Color
 ------|-----
@@ -29,7 +29,7 @@ Dígito|Color
 6. Una persona desea invertir su dinero en un banco, el cual le otorga un 2% de interés. Cuál será la cantidad de dinero que ésta persona tendrá al cabo de un año si la ganancia de cada mes es reinvertida?
 
 
-7. Calcular l promedio de edades de hombres, mujeres y de todo un grupo de alumnos.
+7. Calcular el promedio de edades de hombres, mujeres y de todo un grupo de alumnos.
 
 
 8. Encontrar el menor valor de un conjunto de n números dados.
