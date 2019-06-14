@@ -41,7 +41,7 @@ Dígito|Color
 10. En un supermercado un cajero captura los precios de los artículos que los clientes compran e indica a cada cliente cuál es el monto de lo que deben pagar. Al final del día le indica a su supervisor cuánto fué lo que cobró en total a todos los clientes que pasaron por su caja.
 
 
-11. Cinco miembros de un club contra la obesidad desean saber cuánto han bajado o subido de peso desde la última vez que se reunieron. Para eso de debe realizaar un ritual de pesaje en donde cada uno de pesa en diez básculas distintas y así tener el promedio más exacto de su peso. Si existe diferencia positiva en ese promedio de peso y el peso de la última vez que se reunieron, significa que bajaron. Lo que el problema rquiere es que por cada persona se imprima un letrero que diga: "ŚUBIÓ" ó "BAJÓ" y la cantidad de kilos que subió o bajó de peso.
+11. Cinco miembros de un club contra la obesidad desean saber cuánto han bajado o subido de peso desde la última vez que se reunieron. Para eso de debe realizar un ritual de pesaje en donde cada uno de pesa en diez básculas distintas y así tener el promedio más exacto de su peso. Si existe diferencia positiva en ese promedio de peso y el peso de la última vez que se reunieron, significa que bajaron. Lo que el problema requiere es que por cada persona se imprima un letrero que diga: "ŚUBIÓ" ó "BAJÓ" y la cantidad de kilos que subió o bajó de peso.
 
 
 12. Se desea obtener el promedio de g grupos que están en un mismo año escolar; siendo que cada grupo puede tener n alumnos que cada alumno puede llevar m materias y que en todas las materias se promedian tres calificaciones para obtener el promedio de la materia. Lo que se desea desplegar es el promedio de los grupos, el promedio  de cada grupo y el promedio de cada alumno.
@@ -66,7 +66,7 @@ Finalmente para fijar el precio del kilo de huevo, se toma como base la siguient
 PRECIO TOTAL DE CALIDAD | PESO POR KILO DEL HUEVO
 ------------------------|------------------------
 Mayor o igual que 15 | 1.2 * promedio de calidad
-Mayor o igual que 8 y menor que 15 | 1.00 * promedio de calidad 
+Mayor que 8 y menor que 15 | 1.00 * promedio de calidad 
 Menor o igual que 8 | 0.80 * promedio de calidad 
 
 
