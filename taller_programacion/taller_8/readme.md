@@ -21,3 +21,7 @@
 5. Almacenar 300 números en un vector, imprimir cuantos son ceros, cuántos son negativos, cuantos positivos. Imprimir además la suma de los negativos y la suma de los positivos.
 	- [Ejercicio 5. cout](ejercicio_5_cout.cpp)
 	- [Ejercicio 5. printf](ejercicio_5_printf.cpp)
+
+6. Almacenar 150 números en un vector, almacenarlos en otro vector en orden inverso al vector original e imprimir el vector resultante.
+	- [Ejercicio 6. cout](ejercicio_6_cout.cpp)
+	- [Ejercicio 6. printf](ejercicio_6_printf.cpp)
