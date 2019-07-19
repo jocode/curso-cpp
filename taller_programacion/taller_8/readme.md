@@ -25,3 +25,24 @@
 6. Almacenar 150 números en un vector, almacenarlos en otro vector en orden inverso al vector original e imprimir el vector resultante.
 	- [Ejercicio 6. cout](ejercicio_6_cout.cpp)
 	- [Ejercicio 6. printf](ejercicio_6_printf.cpp)
+
+
+7. Se tienen almacenados en la memoria dos vectores M y N de cien elementos cada uno. Hacer un algoritmo que escriba la palabra “Iguales” si ambos vectores es iguales y “Diferentes” si no lo son.
+Serán iguales cuando en la misma posición de ambos vectores se tenga el mismo valor para todos los elementos.
+	- [Ejercicio 7. cout](taller/ejercicio_7_cout.cpp)
+	- [Ejercicio 7. printf](taller/ejercicio_7_printf.cpp)
+
+
+8. Se tiene el vector A con 100 elementos almacenados. Diseñe un algoritmo que escriba “SI” si el vector esta ordenado ascendente mente o “NO” si el vector no está ordenado.
+	- [Ejercicio 8. cout](taller/ejercicio_8_cout.cpp)
+	- [Ejercicio 8. printf](taller/ejercicio_8_printf.cpp)
+
+
+9. Diseñe un algoritmo que lea un número cualquiera y lo busque en el vector X, el cual tiene almacenados 80 elementos. Escribir la posición donde se encuentra almacenado el número en el vector o el mensaje “NO” si no lo encuentra. Búsqueda secuencial.
+	- [Ejercicio 9. cout](taller/ejercicio_9_cout.cpp)
+	- [Ejercicio 9. printf](taller/ejercicio_9_printf.cpp)
+
+
+10. Diseñe un algoritmo que lea dos vectores A y B de 20 elementos cada uno y multiplique el primer elemento de A con el ultimo de B y luego el segundo elemento de A por el diecinueveavo elemento de B y así sucesivamente hasta llegar al veinteavo elemento de A por el primer elemento de B. El resultado de la multiplicación almacenarlo en un vector C.
+	- [Ejercicio 10. cout](taller/ejercicio_10_cout.cpp)
+	- [Ejercicio 10. printf](taller/ejercicio_10_printf.cpp)
