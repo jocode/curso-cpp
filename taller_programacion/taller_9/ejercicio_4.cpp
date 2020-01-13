@@ -5,7 +5,7 @@ using namespace std;
 
 /**
 4. Hacer un algoritmo de llene una matriz de `20*20`. 
-Sumar las columnas e imprimir que columna tuvo la máxima suma y la suma de esa columna.
+Sumar las columnas e imprimir que columna tuvo la mÃ¡xima suma y la suma de esa columna.
 */
 
 int main(){
@@ -15,10 +15,14 @@ int main(){
 	int matriz[2][2];
 	int suma_columnas[2], col_posicion = 0, suma_mayor = 0;
 	
+	for (int i = 0; i < columnas; i++){
+		suma_columnas[i] = 0;
+	}
+	
 	printf("Ingrese los valores a la matriz: \n\n");
 	for (int fila = 0; fila < filas; fila++){
 		for (int columna = 0; columna < columnas; columna++){
-			printf("Posición [%d][%d]: ", fila, columna);
+			printf("PosiciÃ³n [%d][%d]: ", fila, columna);
 			scanf("%d", &matriz[fila][columna]);
 			suma_columnas[columna] += matriz[fila][columna];
 		}
@@ -34,7 +38,7 @@ int main(){
 		}
 	}
 	
-	printf("\nLa posición de la columna que tuvo la máxima suma es: [%d]", col_posicion);
+	printf("\nLa posiciÃ³n de la columna que tuvo la mÃ¡xima suma es: [%d]", col_posicion);
 	printf("\nLa suma de los valores es de: %d", suma_mayor);
 	
 	return 0;
